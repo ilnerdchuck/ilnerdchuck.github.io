@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VSCode Extension to debug a didactic Kernel
-description: A VSCode Extension to debug a a didactic Kernel developed as thesis work for the bachelor degree
+description: A VSCode Extension to debug a didactic Kernel developed as thesis work for the bachelor degree
 skills: 
   - Typescript
   - Python
