@@ -148,6 +148,7 @@ nav .mobile-nav {
 
 /* SECTION 1: Hero */
 .hero-section {
+    width: 100%;
     padding: 0 50px;
     margin: 50px 0;
     display: flex;  /* This makes .hero-section a flex container */
@@ -905,9 +906,7 @@ footer p {
     }
     /*SECTION 1:HERO */
     .hero-section {
-        width: max-content;
-        /* center content */
-        justify-content: center;
+        width: 100%;
         padding: 0 20px
     }
     .hero-section .text h2 {
