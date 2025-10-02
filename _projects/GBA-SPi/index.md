@@ -1,12 +1,14 @@
 ---
 layout: post
-title: DLX Processor
-description: An Implementation of a DLX processor
+title: GBA-SPi
+description: A GameBoy with a Raspberry inside with cartridges as expansion modules
 skills:
   - KiCAD
   - 3D Modeling
   - Git
   - Scripting
+  - RaspberryPi
+  - Arduino
 
 main-image: /datapath.png
 ---

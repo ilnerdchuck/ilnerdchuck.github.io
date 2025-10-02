@@ -1,11 +1,11 @@
 ---
 layout: post
-title: DLX Processor
-description: An Implementation of a DLX processor
+title: Verification Workshop
+description: A workshop about learning SystemVerilog and UVM to perform testing on designs
 skills: 
   - VHDL
+  - Verilog
   - Modelsim/Questasim
-  - Innovus
   - Docker 
   - Git
   - Scripting
@@ -123,24 +123,4 @@ The primary objectives of the DLX project were:
 
 ## DLX Features
 
-Not the full instruction set has been implemented but only a subset, focusing on the
-fundamental operations required for basic computation:
-
-- Arithmetic Instructions: R-type: ADD, SUB, SLL, SRL, SNE, SLE, SGE
-- Arithmetic Instructions: I-type: ADDi, SUBi, SLLi, SRLi, SNEi, SLEi, SGEi
-- Logical Instructions: R-Type: AND, OR, NOT, XOR
-- Logical Instructions: I-Type: ANDi, ORi, NOTi, XORi
-- Memory Instructions: R-Type: LOAD (LW), STORE (SW)
-- Control Flow Instructions: JUMP, JAL, BNEZ, BEQZ
-
-There have been implemented two features that enanches the DLX processor:
-
-- Forwarding Unit: This unit is designed to handle data hazards by forwarding the results of
-previous instructions to subsequent instructions that require them, thus reducing the need for
-stalls in the pipeline.
-- Branch Prediction: The DLX microprocessor incorporates a simple static branch prediction
-mechanism to improve the performance of control flow instructions. This feature helps to mini-
-mize pipeline stalls caused by branch instructions.
-
-
-[Source Code](https://gitfront.io/r/ilnerdchuck/mwejCaw3AVcb/DLX-Microprocessor/)
+Description of the Verifivation workshop
