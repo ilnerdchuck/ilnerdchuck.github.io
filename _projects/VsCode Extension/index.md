@@ -9,7 +9,7 @@ skills:
   - Git
   - Scripting
 
-main-image: /datapath.png
+main-image: /base.png
 ---
 
 ---
@@ -111,6 +111,14 @@ console.log(x);
 make sure to leave aline betwen the table and the header
 
  -->
-This is a project about a VSCode extension to debug a didactic Kernel
+The project tackles the realization of a VSCode extension to create a custom debugger for a multi-programmed kernel 
+used in the course of Computer Architecture of my Bachelor degree.
+
+The project at it's core uses the Debug Adapter Protocol (DAP) to attach a running session of GDB. The GDB session is 
+monitoring the kernel emulated on QEMU. 
+
+This allows for basic debugging functionalities like step by step code execution and current variable context. 
+Furthermore from GDB the extension takes additional information's regarding the current context of the kernel, in particular 
+what processes are running and in what scope: user or system.
 
 [Source Code](https://github.com/ilnerdchuck/VSCode-Nucleo-Debugger)

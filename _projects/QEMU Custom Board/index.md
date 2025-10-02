@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Verification Workshop
-description: A workshop about learning SystemVerilog and UVM to perform testing on designs
+title: QEMU Implementation of the NXP S32K3X8EVB
+description: An implementation of the NXP S32K3X8EVB board in QEMU
 skills: 
-  - VHDL
-  - Verilog
-  - Modelsim/Questasim
-  - Docker 
+  - QEMU
+  - C
+  - FreeRTOS
+  - GDB
   - Git
-  - Scripting
 
-main-image: /datapath.png
+main-image: /base.png
 ---
 
 ---
@@ -113,4 +112,19 @@ make sure to leave aline betwen the table and the header
 
  -->
 
-Description of the Verifivation workshop
+The goal of this project is to create a simulation environment for the NXP S32K3X8EVB board using
+QEMU. This environment will allow developers to test and develop embedded software applications
+without the need for physical hardware, thereby reducing costs and increasing accessibility. The
+specific objectives of the project include:
+
+- Setting up QEMU to emulate the NXP S32K3X8EVB board.
+- Configuring necessary peripherals and interfaces, such as UART and SPI, to ensure accurate simulation of the board’s functionality.
+- Porting FreeRTOS to the simulated environment to enable real-time operating system capabilities.
+- Testing the simulation environment with sample applications to validate the implementation.
+- Documenting the implementation process, challenges encountered, and solutions devised to overcome them.
+
+In particular the peripherals that will be implemented are:
+• UART (Universal Asynchronous Receiver/Transmitter)
+• SPI (Serial Peripheral Interface)
+
+[Source Code](https://github.com/ilnerdchuck/OS-project)
