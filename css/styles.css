@@ -25,7 +25,7 @@ body {
     padding: 0 50px;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    background-image: url('./assets/default_avatar.jpg');
+    background-image: url('./assets/images/default_avatar.jpg');
     max-width: 1400px;
     margin: 0 auto;
 }
