@@ -111,7 +111,41 @@ console.log(x);
 make sure to leave aline betwen the table and the header
 
  -->
+Post-Synthesis leakage power minimization procedure for Synopsys PrimeTime, submitted for the low-power contest of the Synthesis and Optimization of Digital Systems course at Polytechnic of Turin.
 
-Description about the Low Power contest
+
+The low-power contest is a competition where participants are tasked to optimize some given designs. The goal is to achieve the lowest possible leakage power while maintaining the functionality of the circuit. The methodology used is based on a Multi-Vth approach, which involves the use of multiple threshold voltages to reduce power consumption.
+
+Given the gate-level netlist synthesized with cells at the lowest $V_t$ option, the problem is to implement a procedure to run in Synopsys' PrimeTime to perform multi-Vt cell assignment, such that:
+
+- The leakage power is minimized.
+- The worst slack is not negative.
+- The cells retain their footprint.
+- The optimization lasts no longer than 3 minutes.
+
+The provided library has 3 $V_t$ options: LVT, SVT, HVT and state-dependent cell leakage power characterization data. The effectiveness of the optimization 
+is measured by the provided formula:
+
+```math
+    S = \frac{P_\text{lkg, initial}-P_\text{lkg, final}}{P_\text{lkg, initial}}
+```
+The initial state of the designs is based only on LVT cells.
+
+## Solution
+
+The swap function `swap_vt()` leverages the Prime Time command `estimate_eco` to get an estimation of the slack (area, power and other features of a cell) of the alternative cells types available based on the target one. Then if the target cell is LVT it chooses between SVT and HVT by computing 
+
+```math
+	\Delta_{L_to_S} = \textit{Slack}_{LVT} - \textit{Slack}_{SVT}\\
+	\Delta_{L_to_H} = \textit{Slack}_{LVT} - \textit{Slack}_{SVH}\\
+	\Delta_{L_to_S}-\Delta_{L_to_H} < swap\_threshold
+```
+if (3) is true then the cell is switched to HVT, SVT otherwise. Meanwhile if the target cell is already SVT, it tries to optimize it by swapping it to HVT. 
+This optimization is repeated until cells are available. If the current changed cells are the same as the previous iteration target cells or the 5 minutes elapses the algorithm is terminated (actually 290 seconds to leave room for the time to return to the main function, this was a cconstraint of the contest). 
+
+The two variables available for tuning are :
+
+-`cell_split_factor`: limits the amount of cells that are swapped by each iteration of the algorithm before running a timing update
+-`swap_threshold`: sets the threshold which chooses whether to swap for a SVT or HVT cell
 
 [Source Code](https://github.com/ilnerdchuck/SODS_Lab_and_Contest)
