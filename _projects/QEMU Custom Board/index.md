@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QEMU Implementation of the NXP S32K3X8EVB
+title: QEMU Implementation of the NXP S32K3X8EVB Board
 description: An implementation of the NXP S32K3X8EVB board in QEMU
 skills: 
   - QEMU
