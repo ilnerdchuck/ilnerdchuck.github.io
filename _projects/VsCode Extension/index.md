@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Verification Workshop
-description: A workshop about learning SystemVerilog and UVM to perform testing on designs
+title: VSCode Extension to debug a didactic Kernel
+description: A VSCode Extension to debug a a didactic Kernel developed as thesis work for the bachelor degree
 skills: 
-  - VHDL
-  - Verilog
-  - Modelsim/Questasim
-  - Docker 
+  - Typescript
+  - Python
+  - QEMU
   - Git
   - Scripting
 
@@ -112,5 +111,6 @@ console.log(x);
 make sure to leave aline betwen the table and the header
 
  -->
+This is a project about a VSCode extension to debug a didactic Kernel
 
-Description of the Verifivation workshop
+[Source Code](https://github.com/ilnerdchuck/VSCode-Nucleo-Debugger)
