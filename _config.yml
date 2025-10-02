@@ -13,82 +13,90 @@ title: Francesco Mignone's Portfolio
 name: Francesco Mignone
 headline: Embedded Systems Engineer
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  Write an awesome intro and discuss your highlights and qualification. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A very cool description
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
-profile_image: ./assets/images/profile-image/avatar.jpeg
+profile_image: ./assets/images/profile-image/notion_avatar.jpg
 
 
 # Link your resume
 # You can place your resume in assets/resume/{resume.pdf or add external link such as pdf saved in google drive 
-resume-url: https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing # or /assets/resume/resume.pdf
-
+resume-url: ./assets/resume/Resume.pdf
 
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: test    # https://www.linkedin.com/in/{your url slug} 
-  github: leea12    # https://github.com/{your url slug} 
-  stackoverflow: test      # https://stackoverflow.com/users/{your url slug}
-  medium:            # https://medium.com/@{your url slug} 
-  x-twitter:   # https://x.com/{your url slug} 
-  threads:            # https://threads.net/@{your url slug} 
-  instragram:       # https://instagram.com/{your url slug} 
-  youtube:           # https://youtube.com/@{your url slug} 
-  discord:            # https://discord.com/users/{your url slug} 
-  bluesky:           # https://bsky.app/profile/{your url slug} 
+  linkedin: francescomignone    # https://www.linkedin.com/in/{your url slug} 
+  github: ilnerdchuck    # https://github.com/{your url slug} 
+  # stackoverflow: test      # https://stackoverflow.com/users/{your url slug}
+  # medium:            # https://medium.com/@{your url slug} 
+  x-twitter: ILNerdChuck   # https://x.com/{your url slug} 
+  # threads:            # https://threads.net/@{your url slug} 
+  instragram: ilnerdchuck      # https://instagram.com/{your url slug} 
+  # youtube:           # https://youtube.com/@{your url slug} 
+  discord: 169685374015242240            # https://discord.com/users/{your url slug} 
+  # bluesky:           # https://bsky.app/profile/{your url slug} 
   
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: 3D Modeling
+  - category: Programming Languages
     tools:
-    - Onshape
-    - Solidworks
-    - Creo
-    - Fusion 360 (Autodesk)
-    - Blender (for complex shapes or animations)
-    - Siemens NX
-    - Inventor (Autodesk)
-    - CATIA (Dassault Systèmes)
-  - category: Prototyping
+    - C
+    - Assembly x86/RISC-V/ARM
+    - SQL 
+  - category: HDL Languages
     tools:
-    - SLA
-    - CNC
-    - FDM
-    - SLS
-    - DMLS
-    - PolyJet Printing
-    - Vacuum Casting
-    - Laser Cutting
-    - Water Jet Cutting
-    - Arduino / Raspberry Pi
-    - Breadboarding for circuit testing
-  - category: Design Standards / Practices
+    - Verilog
+    - VHDL
+    - SystemVerilog
+    - UVM
+  - category: Scripting Languages
     tools:
-    - GD&T ASME Y14
-    - ISO fits and tolerances
-    - PLM (PTC Windchill / Arena)   
+    - Bash/Shell
+    - TCL
+  - category: RTL Tools
+    tools:
+    - Vivado (Xilinx)
+    - Quartus (Intel)
+    - ModelSim/Questasim
+    - Design Compiler (Synopsys)
+    - Innovus (Cadence)
+  - category: Embedded Systems
+    tools:
+    - FreeRTOS
+    - Embedded Linux
+    - STM32 (MCU)
+  - category: Other Tools
+    tools:
+    - Git/GitHub
+    - Docker
+    - Linux
+    - GDB
+    - Arduino IDE
+  - category: Technical Skills
+    tools:
+    - Soldering
+    - Logic Analyzers
+    - PCB Analysis
   - category: PCB Design
     tools:
-    - Altium Designer
-    - Altium
-    - Eagle 
     - KiCad
-  - category: Problem Solving / Risk Management
+    - OrCAD
+  - category: Prototyping
     tools:
-    - Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
-    - DFMEA / PFMEA 
-    - Six Sigma methodologies
-    - Shain Red-X
-
+    - Onshape
+    - Fusion 360 (Autodesk)
+    - FDM Printing
+    - Arduino / Raspberry Pi
+    - Breadboarding for circuit testing
+  - category: Languages
+    tools:
+    - Italian (Native)
+    - English (C1 - IELTS)
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/{8-digit key}
-
-
+formspree-key:   https://formspree.io/f/meorkzrk
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors: # this is the basic theme
