@@ -905,6 +905,9 @@ footer p {
     }
     /*SECTION 1:HERO */
     .hero-section {
+        width: max-content;
+        /* center content */
+        justify-content: center;
         padding: 0 20px
     }
     .hero-section .text h2 {
