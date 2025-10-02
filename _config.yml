@@ -67,6 +67,8 @@ skills:
     - FreeRTOS
     - Embedded Linux
     - STM32 (MCU)
+    - Arduino
+    - Raspberry Pi
   - category: Other Tools
     tools:
     - Git/GitHub
