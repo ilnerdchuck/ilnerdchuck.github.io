@@ -96,7 +96,7 @@ skills:
     - English (C1 - IELTS)
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/meorkzrk
+formspree-key: meorkzrk
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors: # this is the basic theme
