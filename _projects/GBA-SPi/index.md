@@ -112,13 +112,21 @@ console.log(x);
 make sure to leave aline betwen the table and the header
 
  -->
- Description of the GBA-SPi project
-{% include image-gallery.html images="pcb.png" height="400" %} 
+The project has been born as a way to learn PBC design and for fun. I wanted to have a small pocket computer 
+with a wide variety of expansions cards to connect ot various interfaces. We could say something like the 
+FlipperZero but this is a whole computer so it can also play games! Thus the original button layout of the GameBoy 
+is kept and made functional.
 
-{% include image-gallery.html images="pcb_3d.png" height="400" %} 
-{% include image-gallery.html images="module.jpg" height="400" %} 
-{% include image-gallery.html images="RPI_Fit.jpg" height="400" %} 
+The Controls are managed by an ATMega MCU connected via I2C to the Raspberry, it also manages the power button to turn on the 
+system and safely shutdown the Raspberry.
+A custom kernel module has been made for the ATMega to handle the controller buttons and the power button
 
-
+The Raspberry is connected in a way that leaves all the GPIO available for the modules: the atmega is connected via I2C bus of the camera to leave
+the one available on the GPIO to the modules, also the screen is connected to the composite output of the HDMI, yes you red it right **COMPOSITE** in 2025.
 
 [Source Code](https://github.com/ilnerdchuck/GBA-SPi)
+
+{% include image-gallery.html images="pcb.png" height="400" %}
+{% include image-gallery.html images="pcb_3d.png" height="400" %}
+{% include image-gallery.html images="module.jpg" height="400" %}
+{% include image-gallery.html images="RPI_Fit.jpg" height="400" %}

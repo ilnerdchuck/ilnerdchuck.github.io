@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DLX Processor
-description: An Implementation of a DLX processor
+description: An Implementation of a DLX processor including Simulation, Synthesis and Physical Design
 skills: 
   - VHDL
   - Modelsim/Questasim
@@ -142,5 +142,15 @@ stalls in the pipeline.
 mechanism to improve the performance of control flow instructions. This feature helps to mini-
 mize pipeline stalls caused by branch instructions.
 
+## Implementation Structure
+The DLX has been divided in a classical Control Unit and Datapath schema. 
+The Datapath has been implemented via an Hardwired structure. Meanwhile the Datapath has been split in sub-components 
+for each stage of the pipeline:
+
+- Fetch
+- Decode
+- Execute
+- Memory
+- Write Back
 
 [Source Code](https://gitfront.io/r/ilnerdchuck/mwejCaw3AVcb/DLX-Microprocessor/)

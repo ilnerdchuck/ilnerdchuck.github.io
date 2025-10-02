@@ -13,7 +13,13 @@ title: Francesco Mignone's Portfolio
 name: Francesco Mignone
 headline: Embedded Systems Engineer
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  The site is a work in progress. Here you will find information about me, my skills, projects and how to contact me.
+  I am passionate about embedded systems, microcontrollers, and low-level programming. I love working on projects that involve 
+  hardware and software integration, and I am always eager to learn new technologies and tools.
+
+  I have a Bachelor's degree in Computer Engineering from the University of Pisa.
+  I am currently enrolled in a Master's degree in Embedded Systems at Politecnico di Torino. 
+  
+  Here you will find information about me, my skills, projects and how to contact me.
   Feel free to reach out if you want to collaborate on a project or just want to say hi!
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/notion_avatar.jpg
