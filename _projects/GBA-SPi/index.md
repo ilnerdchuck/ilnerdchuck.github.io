@@ -10,7 +10,7 @@ skills:
   - RaspberryPi
   - Arduino
 
-main-image: /images/pcb.png
+main-image: /pcb.png
 ---
 
 ---
@@ -118,5 +118,7 @@ make sure to leave aline betwen the table and the header
 {% include image-gallery.html images="pcb_3d.png" height="400" %} 
 {% include image-gallery.html images="module.jpg" height="400" %} 
 {% include image-gallery.html images="RPI_Fit.jpg" height="400" %} 
+
+
 
 [Source Code](https://github.com/ilnerdchuck/GBA-SPi)
