@@ -9,7 +9,7 @@ skills:
   - Design Compiler
   - TCL
 
-main-image: /datapath.png
+main-image: /base.png
 ---
 
 ---
