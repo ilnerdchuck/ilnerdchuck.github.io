@@ -25,8 +25,8 @@ body {
     padding: 0 50px;
     font-family: 'Poppins', sans-serif;
     /* background-color: var(--background-color); */
-    background-color: lightblue;
-    /* background-image: url(../assets/images/background.png); */
+    /* background-color: lightblue; */
+    background-image: url(../assets/images/icon.jpg);
     max-width: 1400px;
     margin: 0 auto;
 }
