@@ -122,7 +122,7 @@ system and safely shutdown the Raspberry.
 A custom kernel module has been made for the ATMega to handle the controller buttons and the power button
 
 The Raspberry is connected in a way that leaves all the GPIO available for the modules: the atmega is connected via I2C bus of the camera to leave
-the one available on the GPIO to the modules, also the screen is connected to the composite output of the HDMI, yes you red it right **COMPOSITE** in 2025.
+the one available on the GPIO to the modules, also the screen is connected to the composite output of the HDMI, yes you read it right **COMPOSITE** in 2025.
 
 [Source Code](https://github.com/ilnerdchuck/GBA-SPi)
 
