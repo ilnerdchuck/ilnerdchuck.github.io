@@ -8,7 +8,9 @@ skills:
   - FreeRTOS
   - GDB
   - Git
-
+  - UART
+  - SPI
+  - TPM
 main-image: /base.png
 ---
 
@@ -123,8 +125,6 @@ specific objectives of the project include:
 - Testing the simulation environment with sample applications to validate the implementation.
 - Documenting the implementation process, challenges encountered, and solutions devised to overcome them.
 
-In particular the peripherals that will be implemented are:
-• UART (Universal Asynchronous Receiver/Transmitter)
-• SPI (Serial Peripheral Interface)
+An extra TPM module has been added for Secure Key Storage and Secure Boot for FreeROTS.  
 
 [Source Code](https://github.com/ilnerdchuck/OS-project)
